@@ -1,0 +1,26 @@
+
+-- create
+CREATE TABLE EMPLOYEE (
+  empId INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  dept TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (0001, 'Clark', 'Sales');
+INSERT INTO EMPLOYEE VALUES (0002, 'Dave', 'Accounting');
+INSERT INTO EMPLOYEE VALUES (0003, 'Ava', 'Sales');
+
+-- fetch 
+ALTER TABLE EMPLOYEE
+ADD Email varchar(255);
+INSERT INTO EMPLOYEE VALUES (0004, 'A', 'ales','ankitbabu@gmail.com');
+ALTER TABLE EMPLOYEE
+DROP column dept;
+TRUNCATE TABLE EMPLOYEE;
+select * from EMPLOYEE;
+
+
+
+
+
